@@ -1,3 +1,11 @@
+/*global $*/
+/*global ready*/
 $(document).ready(function(){
-	$(".quotefade").fadeIn(3000);
+    $("#slogan").typeIt({
+        speed: 100,
+        lifeLike: true,
+    });
+    $("#menu").scrolla({
+        mobile:true
+    });
 })
