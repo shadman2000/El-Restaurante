@@ -1,8 +1,14 @@
+.row .col.s4 {
+  padding: 0;
+  margin:0;
+}
+
 body{
 	margin:0px;
+	overflow-x: hidden;
 }
 #sec1{
-    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3),rgba(0,0,0,1)),url("http://www.4usky.com/data/out/77/164689625-restaurant-wallpapers.jpg");
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3),rgba(0,0,0,1)),url("https://s3.envato.com/files/55764716/590x3000.jpg");
     background-size:cover;
     background-repeat:no-repeat;
     height:100vh;
@@ -12,14 +18,56 @@ body{
 
 #slogan{
     position:relative;
-    top:40vh;
+    top:25vh;
     color:white;
     font-family:'Roboto Slab', serif;
 }
 
 #menu{
     position:relative;
-    top:40vh;
+    top:25vh;
     color:white;
     font-family:'Roboto Slab', serif;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.fooda{
+    border:1px solid #fff;
+    margin-top: 1em;
+    display: inline-block;
+    color: #fff;
+    padding: 0 2em;
+}
+
+.fade {
+   opacity: 1;
+   transition: opacity transform 2s ease-in-out;
+   
+   }
+
+.fade:hover {
+    background-color:#000;
+    opacity:0.5;
+}
+
+#floatMenu{
+    min-height: 100px;
+    margin:0;
+    padding:0;
+    background-color:black;
+}
+
+@keyframes goUp{
+    0%{top:0px;}
+}
+
+#name{
+    position:relative;
+    color:white;
+    font-family: 'Pacifico', cursive;
+    top:20vh;
+    font-size:15vh;
 }

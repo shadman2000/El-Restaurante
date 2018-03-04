@@ -5,7 +5,7 @@ $(document).ready(function(){
         speed: 100,
         lifeLike: true,
     });
-    $("#menu").scrolla({
+    $(".scrolla").scrolla({
         mobile:true
     });
 })
