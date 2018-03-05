@@ -4,7 +4,7 @@
     <title>New</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no" />
-        <link rel="stylesheet" href="./materialize/css/materialize.css">
+      <link rel="stylesheet" href="./materialize/css/materialize.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/font-awesome.min.css" />
     <link rel="stylesheet" href="./css/hamburgers.css" />
@@ -14,13 +14,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
     <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round|Lobster" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     
   </head>
   <body>
     <div id="sec1" style="text-align:center;">
-      <nav class="transparent">
+      <nav class="transparent" style="position:sticky">
         <div class="nav-wrapper">
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="#" class="fa fa-facebook"></a></li>
@@ -31,50 +31,53 @@
       </nav>
       <h1 id="name" data-animate="fadeInDown" data-duration="2.0s" data-delay="0.1s" class="scrolla">¿Qué hora es?</h1>
       <h4 id="slogan">Te veo <span style="color:#f57c00">mañana</span></h4>
-      <button type="button" id="menu" class="btn btn-outline-success" data-animate="fadeInUp" data-duration="2.0s" data-delay="0.1s" class="scrolla">Menu</button>
-      <button type="button" id="menu" class="btn btn-outline-danger" data-animate="fadeInUp" data-duration="2.0s" data-delay="0.1s" class="scrolla">Book a table</button>
+      <a href="#food"><button type="button" id="menu" class="btn btn-outline-success" data-animate="fadeInUp" data-duration="2.0s" data-delay="0.1s" class="scrolla">Menu</button></a>
+      <button type="button" id="menu" class="btn btn-outline-danger" data-animate="fadeInUp" data-duration="2.0s" data-delay="0.1s" class="scrolla">
+Reservar una mesa</button>
+    </div>
+
+    <div id="mainHolder">
+      <div class="row">
+        <div class="col s4 holder" id="bfh">
+          <div id="bffaded" style="background-color:black; opacity:0.0;height:100%;; position:relative;transform:1s ease-in-out;"></div>
+          <h1 class="menuClass" id="bfmenu">Desayuno</h1>
+          <a id="bfmenulink" href="bf.html" style="position:relative; top:-33vh; font-family: 'Crete Round', serif;opacity:0.0;font-size:20px;">Ver menú</a>
+        </div>
+        <div class="col s4 holder" id="lh" style="background-image:url('./media/lh.jpg');">
+          <div id="lcfaded" style="background-color:black; opacity:0.0;height:100%;; position:relative;transform:1s ease-in-out;"></div>
+          <h1 id="lcmenu" class="menuClass">Almuerzo</h1>
+          <a id="lclink" href="#" style="position:relative; top:-33vh; font-family: 'Crete Round', serif;opacity:0.0;font-size:20px;">Ver menú</a>
+        </div>
+        <div class="col s4 holder" id="sh" style="background-image:url('./media/sp.jpg');">
+          <div id="shfaded" style="background-color:black; opacity:0.0;height:100%;; position:relative;transform:1s ease-in-out;"></div>
+          <h1 id="shmenu" class="menuClass">Sopas</h1>
+          <a id="shlink" href="#" style="position:relative; top:-33vh; font-family: 'Crete Round', serif;opacity:0.0;font-size:20px;">Ver menú</a>
+        </div>
+      </div>
+      
+      <div id="food" class="scrollspy">
+        <div class="row">
+          <div class="col s4 holder" id="sf" style="background-image:url('./media/sf.jpg');">
+            <div id="sffaded" style="background-color:black; opacity:0.0;height:100%;; position:relative;transform:1s ease-in-out;"></div>
+            <h1 id="sfmenu" class="menuClass">Mariscos</h1>
+            <a id="sflink" href="#" style="position:relative; top:-33vh; font-family: 'Crete Round', serif;opacity:0.0;font-size:20px;">Ver menú</a>
+          </div>
+          <div class="col s4 holder" id="mt" style="background-image:url('./media/mt.jpg');">
+            <div id="mtfaded" style="background-color:black; opacity:0.0;height:100%;; position:relative;transform:1s ease-in-out;"></div>
+            <h1 id="mtmenu" class="menuClass">Carnes</h1>
+            <a id="mtlink" href="#" style="position:relative; top:-33vh; font-family: 'Crete Round', serif;opacity:0.0;font-size:20px;">Ver menú</a>
+          </div>
+          <div class="col s4 holder" id="dt" style="background-image:url('./media/dt.jpg');">
+            <div id="dtfaded" style="background-color:black; opacity:0.0;height:100%;; position:relative;transform:1s ease-in-out;"></div>
+            <h1 id="dtmenu" class="menuClass">Postre</h1>
+            <a id="dtlink" href="#" style="position:relative; top:-33vh; font-family: 'Crete Round', serif;opacity:0.0;font-size:20px;">Ver menú</a>
+          </div>
+        </div>
+      </div>
     </div>
     
-    <div id="floatMenu" style="text-align:center;">
-      <div class = "row">
-        <div class ="col s4">
-          <div class="holder" id="bfh" style="position:relative; background-image:url('./media/bf.jpg');">
-            
-          </div>
-        </div>
-        <div class ="col s4">
-          <div class="holder" id="hold1" id="foods" style="position:relative;">
-              <a href="#"><img class="fade" src="./media/lh.jpg" alt="img01" style="max-width: 100%; max-height: 100%;"></a>
-              <h1 style="font-family: 'Alfa Slab One', cursive; position:relative; top:-25vh; color:white;">Almuerzo</h1>
-          </div>
-        </div>
-        <div class ="col s4">
-          <div class="holder" id="hold1" id="foods" style="position:relative;">
-              <a href="#"><img class="fade" src="./media/sp.jpg" alt="img01" style="max-width: 100%; max-height: 100%;"></a>
-              <h1 style="font-family: 'Alfa Slab One', cursive; position:relative; top:-25vh; color:white;">Sopas</h1>
-          </div>
-        </div>
-      </div>
-      <div class = "row">
-        <div class ="col s4">
-          <div class="holder" id="hold1" id="foods" style="position:relative;">
-              <a href="#"><img class="fade" src="./media/sf.jpg" alt="img01" style="max-width: 100%; max-height: 100%;"></a>
-              <h1 style="font-family: 'Alfa Slab One', cursive; position:relative; top:-25vh; color:white;">Mariscos</h1>
-          </div>
-        </div>
-        <div class ="col s4">
-          <div class="holder" id="hold1" id="foods" style="position:relative;">
-              <a href="#"><img class="fade" src="./media/mt.jpg" alt="img01" style="max-width: 100%; max-height: 100%;"></a>
-              <h1 style="font-family: 'Alfa Slab One', cursive; position:relative; top:-25vh; color:white;">Carnes</h1>
-          </div>
-        </div>
-        <div class ="col s4">
-          <div class="holder" id="hold1" id="foods" style="position:relative;">
-              <a href="#"><img class="fade" src="./media/dt.jpg" alt="img01" style="max-width: 100%; max-height: 100%;"></a>
-              <h1 style="font-family: 'Alfa Slab One', cursive; position:relative; top:-25vh; color:white;">Postres</h1>
-          </div>
-        </div>
-      </div>
+    <div id="sec3">
+      
     </div>
     
     <script type="text/javascript" src="./js/jquery.min.js"></script>
