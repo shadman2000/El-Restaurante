@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Crete+Round|Lobster" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noticia+Text" rel="stylesheet">
     
   </head>
   <body>
@@ -32,23 +33,27 @@
       <h1 id="name" data-animate="fadeInDown" data-duration="2.0s" data-delay="0.1s" class="scrolla">¿Qué hora es?</h1>
       <h4 id="slogan">Te veo <span style="color:#f57c00">mañana</span></h4>
       <a href="#food"><button type="button" id="menu" class="btn btn-outline-success" data-animate="fadeInUp" data-duration="2.0s" data-delay="0.1s" class="scrolla">Menu</button></a>
-      <button type="button" id="menu" class="btn btn-outline-danger" data-animate="fadeInUp" data-duration="2.0s" data-delay="0.1s" class="scrolla">
-Reservar una mesa</button>
+      <a href="#sec3"><button type="button" id="menu" class="btn btn-outline-danger" data-animate="fadeInUp" data-duration="2.0s" data-delay="0.1s" class="scrolla">
+Reservar una mesa</button></a>
+    </div>
+    
+    <div id="pushed" data-paroller-factor="0.4" data-paroller-direction="vertical">
+      <h2 data-animate="fadeInUp" data-duration="2.0s" data-delay="0.1s" id="texti" class="container" style="color:white; position:relative;top:30vh;font-family: 'Noticia Text', serif;">¿Qué hora es? - es uno de los pocos restaurantes españoles en Dubai.<br>¿Qué hora es? - se estableció en 2014 y desde entonces estamos dominando el negocio de los restaurantes en los mundos uno de los paises mas ricos <br><br><strong>TOMAMOS PEDIDOS EN LÍNEA Y ENVÍO INTERNACIONAL</strong></h2>
     </div>
 
     <div id="mainHolder">
       <div class="row">
-        <div class="col s4 holder" id="bfh">
+        <div class="col s4 holder" id="bfh" data-animate="fadeInLeft" data-duration="1.0s" data-delay="0.0s">
           <div id="bffaded" style="background-color:black; opacity:0.0;height:100%;; position:relative;transform:1s ease-in-out;"></div>
           <h1 class="menuClass" id="bfmenu">Desayuno</h1>
-          <a id="bfmenulink" href="bf.html" style="position:relative; top:-33vh; font-family: 'Crete Round', serif;opacity:0.0;font-size:20px;">Ver menú</a>
+          <a id="bfmenulink" href="#" style="position:relative; top:-33vh; font-family: 'Crete Round', serif;opacity:0.0;font-size:20px;">Ver menú</a>
         </div>
-        <div class="col s4 holder" id="lh" style="background-image:url('./media/lh.jpg');">
+        <div class="col s4 holder" id="lh" style="background-image:url('./media/lh.jpg');" data-animate="fadeInDown" data-duration="1.0s" data-delay="0.0s">
           <div id="lcfaded" style="background-color:black; opacity:0.0;height:100%;; position:relative;transform:1s ease-in-out;"></div>
           <h1 id="lcmenu" class="menuClass">Almuerzo</h1>
           <a id="lclink" href="#" style="position:relative; top:-33vh; font-family: 'Crete Round', serif;opacity:0.0;font-size:20px;">Ver menú</a>
         </div>
-        <div class="col s4 holder" id="sh" style="background-image:url('./media/sp.jpg');">
+        <div class="col s4 holder" id="sh" style="background-image:url('./media/sp.jpg');" data-animate="fadeInRight" data-duration="1.0s" data-delay="0.0s">
           <div id="shfaded" style="background-color:black; opacity:0.0;height:100%;; position:relative;transform:1s ease-in-out;"></div>
           <h1 id="shmenu" class="menuClass">Sopas</h1>
           <a id="shlink" href="#" style="position:relative; top:-33vh; font-family: 'Crete Round', serif;opacity:0.0;font-size:20px;">Ver menú</a>
@@ -57,17 +62,17 @@ Reservar una mesa</button>
       
       <div id="food" class="scrollspy">
         <div class="row">
-          <div class="col s4 holder" id="sf" style="background-image:url('./media/sf.jpg');">
+          <div class="col s4 holder" id="sf" style="background-image:url('./media/sf.jpg');" data-animate="fadeInLeft" data-duration="1.0s" data-delay="0.0s">
             <div id="sffaded" style="background-color:black; opacity:0.0;height:100%;; position:relative;transform:1s ease-in-out;"></div>
             <h1 id="sfmenu" class="menuClass">Mariscos</h1>
             <a id="sflink" href="#" style="position:relative; top:-33vh; font-family: 'Crete Round', serif;opacity:0.0;font-size:20px;">Ver menú</a>
           </div>
-          <div class="col s4 holder" id="mt" style="background-image:url('./media/mt.jpg');">
+          <div class="col s4 holder" id="mt" style="background-image:url('./media/mt.jpg');" data-animate="fadeInUp" data-duration="1.0s" data-delay="0.0s">
             <div id="mtfaded" style="background-color:black; opacity:0.0;height:100%;; position:relative;transform:1s ease-in-out;"></div>
             <h1 id="mtmenu" class="menuClass">Carnes</h1>
             <a id="mtlink" href="#" style="position:relative; top:-33vh; font-family: 'Crete Round', serif;opacity:0.0;font-size:20px;">Ver menú</a>
           </div>
-          <div class="col s4 holder" id="dt" style="background-image:url('./media/dt.jpg');">
+          <div class="col s4 holder" id="dt" style="background-image:url('./media/dt.jpg');" data-animate="fadeInRight" data-duration="1.0s" data-delay="0.0s">
             <div id="dtfaded" style="background-color:black; opacity:0.0;height:100%;; position:relative;transform:1s ease-in-out;"></div>
             <h1 id="dtmenu" class="menuClass">Postre</h1>
             <a id="dtlink" href="#" style="position:relative; top:-33vh; font-family: 'Crete Round', serif;opacity:0.0;font-size:20px;">Ver menú</a>
@@ -76,8 +81,59 @@ Reservar una mesa</button>
       </div>
     </div>
     
-    <div id="sec3">
-      
+    <div id="sec3" data-paroller-factor="0.2" data-paroller-direction="vertical">
+      <h1 id="booktest" data-animate="fadeInDown" data-duration="2.0s" data-delay="0.1s" class="scrolla">Reservar una mesa</h1>
+      <div id="formholder" style="width:50vw; text-align:center; position:relative; left:25vw; height:70vh; top:20vh;">
+        <div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="first_name" type="text" class="validate">
+              <label for="first_name">Nombre de pila</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate">
+              <label for="last_name">Apellido</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="phone" type="text" class="validate">
+              <label for="phone">Phone Number</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="seat" type="text" class="validate">
+              <label for="seat">Number of Seats</label>
+            </div>
+          </div>
+          <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected><p style="color:white;">Preferences</p></option>
+              <option value="1">Window Seat</option>
+              <option value="2">Family Table</option>
+              <option value="3">Single</option>
+              <option value="4">Room</option>
+              <option value="5">Special</option>
+            </select>
+          </div>
+          <button type="button" class="btn btn-outline-success">Submit</button>
+        </div>
+      </div>
+    </div>
+    
+    <div id="sec4" style="background-color:black; height:30vh;width:100vw; text-align:center;">
+      <u><h5 style="color:white; position:relative;top:4vh;">Contáctenos @</h5></u>
+      <div style="color:white; position:relative; top:6vh;">
+        <p>EMAIL:  quehoraes@urfav.com</p>
+        <p>Phone:   (123)-456-7890</p>
+        <p>Address: 1 Sheikh Mohammed bin Rashid Blvd - Dubai - United Arab Emirates (Inside Burj Khalifa-163rd floor)</p>
+        <p><strong>TOMAMOS PEDIDOS EN LÍNEA Y ENVÍO INTERNACIONAL</strong></p>
+      </div>
     </div>
     
     <script type="text/javascript" src="./js/jquery.min.js"></script>
@@ -85,6 +141,7 @@ Reservar una mesa</button>
     <script type="text/javascript" src="./js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./js/scroll-reveal.js"></script>
     <script type="text/javascript" src="./js/hamburgers.js"></script>
+    <script type="text/javascript" src="./js/paroller.js"></script>
     <script type="text/javascript" src="./materialize/js/materialize.js"></script>
     <script src="./js/typeIt.js"></script>
     <script src="./js/scrolla.js"></script>

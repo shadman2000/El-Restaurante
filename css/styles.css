@@ -3,6 +3,16 @@
   margin:0;
 }
 
+.input-field label {
+    font-weight:bold;
+    color:white;
+}
+
+.input-field option {
+    font-weight:bold;
+    color:white;
+}
+
 body{
 	margin:0px;
 	overflow-x: hidden;
@@ -208,4 +218,26 @@ a:hover{
 #sec3{
     height:100vh;
     background-color:black;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('http://hdfreewallpaper.net/wp-content/uploads/2017/04/Burj-Khalifa-image.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    width:100vw;
+    text-align: center;
+}
+
+#booktest{
+    position:relative;
+    top:15vh;
+    color:white;
+    font-family: 'Lobster', cursive;
+}
+
+#pushed{
+    height:100vh;
+    background-color:black;
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("https://ak2.picdn.net/shutterstock/videos/2404592/thumb/11.jpg?i10c=img.resize(height:160)");
+    background-size:cover;
+    background-repeat:no-repeat;
+    width:100vw;
+    text-align: center;
 }
