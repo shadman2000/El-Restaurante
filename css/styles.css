@@ -34,34 +34,10 @@ a:hover{
     text-decoration: none;
 }
 
-.fooda{
-    border:1px solid #fff;
-    margin-top: 1em;
-    display: inline-block;
-    color: #fff;
-    padding: 0 2em;
-}
-
-.fade {
-   opacity: 1;
-   transition: opacity transform 2s ease-in-out;
-   
-   }
-
-.fade:hover {
-    background-color:#000;
-    opacity:0.5;
-}
-
-#floatMenu{
-    min-height: 100px;
-    margin:0;
-    padding:0;
+#mainHolder{
+    height:100vh;
     background-color:black;
-}
-
-@keyframes goUp{
-    0%{top:0px;}
+    text-align:center;
 }
 
 #name{
@@ -70,4 +46,166 @@ a:hover{
     font-family: 'Pacifico', cursive;
     top:20vh;
     font-size:15vh;
+}
+
+.holder{
+    height:50vh;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.menuClass{
+    font-family: 'Lobster', cursive;
+    color:white;
+    top:-32vh;
+    font-size:10vh;
+    position:relative;
+}
+
+@keyframes menuNameGoUp{
+    from{
+        top:-32vh;
+    }
+    
+    to{
+        top:-37vh;
+    }
+}
+
+@keyframes menulinkGoUp{
+    from{
+        top:-33vh;
+    }
+    
+    to{
+        top:-37vh;
+        opacity: 1.0;
+    }
+}
+
+@keyframes blackLinearGradient{
+    from{
+        background:linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.0));
+    }
+    
+    to{
+        background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    }
+}
+
+@keyframes faded-background{
+    to{
+        opacity:0.7;
+    }
+}
+
+#bfh{
+    transition:1s ease-in-out;
+    background-image:url('../media/bf.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    cursor: pointer;
+}
+
+#lh{
+    transition:1s ease-in-out;
+    cursor: pointer;
+}
+
+#sh{
+    transition:1s ease-in-out;
+    cursor: pointer;
+}
+
+#sf{
+    transition:1s ease-in-out;
+    cursor: pointer;
+}
+
+#mt{
+    transition:1s ease-in-out;
+    cursor: pointer;
+}
+
+#dt{
+    transition:1s ease-in-out;
+    cursor: pointer;
+}
+
+
+#bfh:hover #bfmenu{
+    animation:menuNameGoUp 1s forwards;
+}
+
+#bfh:hover #bfmenulink{
+    animation:menulinkGoUp 1s forwards;
+}
+
+#bfh:hover #bffaded{
+    animation:faded-background 1s forwards;
+}
+
+#lh:hover #lcmenu{
+    animation:menuNameGoUp 1s forwards;
+}
+
+#lh:hover #lcfaded{
+    animation:faded-background 1s forwards;
+}
+
+#lh:hover #lclink{
+    animation:menulinkGoUp 1s forwards;
+}
+
+#sh:hover #shmenu{
+    animation:menuNameGoUp 1s forwards;
+}
+
+#sh:hover #shfaded{
+    animation:faded-background 1s forwards;
+}
+
+#sh:hover #shlink{
+    animation:menulinkGoUp 1s forwards;
+}
+
+#sf:hover #sfmenu{
+    animation:menuNameGoUp 1s forwards;
+}
+
+#sf:hover #sffaded{
+    animation:faded-background 1s forwards;
+}
+
+#sf:hover #sflink{
+    animation:menulinkGoUp 1s forwards;
+}
+
+#mt:hover #mtmenu{
+    animation:menuNameGoUp 1s forwards;
+}
+
+#mt:hover #mtfaded{
+    animation:faded-background 1s forwards;
+}
+
+#mt:hover #mtlink{
+    animation:menulinkGoUp 1s forwards;
+}
+
+#dt:hover #dtmenu{
+    animation:menuNameGoUp 1s forwards;
+}
+
+#dt:hover #dtfaded{
+    animation:faded-background 1s forwards;
+}
+
+#dt:hover #dtlink{
+    animation:menulinkGoUp 1s forwards;
+}
+
+#sec3{
+    height:100vh;
+    background-color:black;
 }
