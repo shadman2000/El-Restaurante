@@ -16,5 +16,6 @@ $(document).ready(function(){
     });
     $('#sec3').paroller();
     $('#pushed').paroller();
+    $('#sec1').paroller();
     $('select').material_select();
 })
