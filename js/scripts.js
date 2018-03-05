@@ -8,4 +8,7 @@ $(document).ready(function(){
     $(".scrolla").scrolla({
         mobile:true
     });
+    $('.scrollspy').scrollSpy({
+        scrollOffset:400
+    });
 })
